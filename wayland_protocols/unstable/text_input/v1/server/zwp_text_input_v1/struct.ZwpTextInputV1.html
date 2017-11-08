@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ZwpTextInputV1` struct in crate `wayland_protocols`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ZwpTextInputV1">
+
+    <title>wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ZwpTextInputV1</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>text_input</a>::<wbr><a href='../../index.html'>v1</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zwp_text_input_v1</a></p><script>window.sidebarCurrent = {name: 'ZwpTextInputV1', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>text_input</a>::<wbr><a href='../../index.html'>v1</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zwp_text_input_v1</a>::<wbr><a class="struct" href=''>ZwpTextInputV1</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#78-81' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ZwpTextInputV1 { /* fields omitted */ }</pre>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#520-679' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.enter' class="method"><span id='enter.v' class='invisible'><code>fn <a href='#method.enter' class='fnname'>enter</a>(&amp;self, surface: &amp;WlSurface) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#525-529' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>enter event</p>
+
+<p>Notify the text_input object when it received focus. Typically in
+response to an activate request.</p>
+</div><h4 id='method.leave' class="method"><span id='leave.v' class='invisible'><code>fn <a href='#method.leave' class='fnname'>leave</a>(&amp;self) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#535-539' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>leave event</p>
+
+<p>Notify the text_input object when it lost focus. Either in response
+to a deactivate request or when the assigned surface lost focus or was
+destroyed.</p>
+</div><h4 id='method.modifiers_map' class="method"><span id='modifiers_map.v' class='invisible'><code>fn <a href='#method.modifiers_map' class='fnname'>modifiers_map</a>(&amp;self, map: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>&gt;) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#545-550' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>modifiers map</p>
+
+<p>Transfer an array of 0-terminated modifier names. The position in
+the array is the index of the modifier as used in the modifiers
+bitmask in the keysym event.</p>
+</div><h4 id='method.input_panel_state' class="method"><span id='input_panel_state.v' class='invisible'><code>fn <a href='#method.input_panel_state' class='fnname'>input_panel_state</a>(&amp;self, state: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#554-558' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>state of the input panel</p>
+
+<p>Notify when the visibility state of the input panel changed.</p>
+</div><h4 id='method.preedit_string' class="method"><span id='preedit_string.v' class='invisible'><code>fn <a href='#method.preedit_string' class='fnname'>preedit_string</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;serial: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;text: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;commit: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a><br>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#570-576' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>pre-edit</p>
+
+<p>Notify when a new composing text (pre-edit) should be set around the
+current cursor position. Any previously set composing text should
+be removed.</p>
+
+<p>The commit text can be used to replace the preedit text on reset
+(for example on unfocus).</p>
+
+<p>The text input should also handle all preedit_style and preedit_cursor
+events occurring directly before preedit_string.</p>
+</div><h4 id='method.preedit_styling' class="method"><span id='preedit_styling.v' class='invisible'><code>fn <a href='#method.preedit_styling' class='fnname'>preedit_styling</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;index: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;length: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;style: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#586-590' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>pre-edit styling</p>
+
+<p>Sets styling information on composing text. The style is applied for
+length bytes from index relative to the beginning of the composing
+text (as byte offset). Multiple styles can
+be applied to a composing text by sending multiple preedit_styling
+events.</p>
+
+<p>This event is handled as part of a following preedit_string event.</p>
+</div><h4 id='method.preedit_cursor' class="method"><span id='preedit_cursor.v' class='invisible'><code>fn <a href='#method.preedit_cursor' class='fnname'>preedit_cursor</a>(&amp;self, index: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#598-602' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>pre-edit cursor</p>
+
+<p>Sets the cursor position inside the composing text (as byte
+offset) relative to the start of the composing text. When index is a
+negative number no cursor is shown.</p>
+
+<p>This event is handled as part of a following preedit_string event.</p>
+</div><h4 id='method.commit_string' class="method"><span id='commit_string.v' class='invisible'><code>fn <a href='#method.commit_string' class='fnname'>commit_string</a>(&amp;self, serial: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, text: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#612-617' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>commit</p>
+
+<p>Notify when text should be inserted into the editor widget. The text to
+commit could be either just a single character after a key press or the
+result of some composing (pre-edit). It could also be an empty text
+when some text should be removed (see delete_surrounding_text) or when
+the input cursor should be moved (see cursor_position).</p>
+
+<p>Any previously set composing text should be removed.</p>
+</div><h4 id='method.cursor_position' class="method"><span id='cursor_position.v' class='invisible'><code>fn <a href='#method.cursor_position' class='fnname'>cursor_position</a>(&amp;self, index: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, anchor: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#624-628' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>set cursor to new position</p>
+
+<p>Notify when the cursor or anchor position should be modified.</p>
+
+<p>This event should be handled as part of a following commit_string
+event.</p>
+</div><h4 id='method.delete_surrounding_text' class="method"><span id='delete_surrounding_text.v' class='invisible'><code>fn <a href='#method.delete_surrounding_text' class='fnname'>delete_surrounding_text</a>(&amp;self, index: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, length: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#639-643' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>delete surrounding text</p>
+
+<p>Notify when the text around the current cursor position should be
+deleted.</p>
+
+<p>Index is relative to the current cursor (in bytes).
+Length is the length of deleted text (in bytes).</p>
+
+<p>This event should be handled as part of a following commit_string
+event.</p>
+</div><h4 id='method.keysym' class="method"><span id='keysym.v' class='invisible'><code>fn <a href='#method.keysym' class='fnname'>keysym</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;serial: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;time: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;sym: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;state: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;modifiers: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#652-656' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>keysym</p>
+
+<p>Notify when a key event was sent. Key events should not be used
+for normal text input operations, which should be done with
+commit_string, delete_surrounding_text, etc. The key event follows
+the wl_keyboard key event convention. Sym is an XKB keysym, state a
+wl_keyboard key_state. Modifiers are a mask for effective modifiers
+(where the modifier indices are set by the modifiers_map event)</p>
+</div><h4 id='method.language' class="method"><span id='language.v' class='invisible'><code>fn <a href='#method.language' class='fnname'>language</a>(&amp;self, serial: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, language: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#661-666' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>language</p>
+
+<p>Sets the language of the input text. The &quot;language&quot; argument is an
+RFC-3066 format language tag.</p>
+</div><h4 id='method.text_direction' class="method"><span id='text_direction.v' class='invisible'><code>fn <a href='#method.text_direction' class='fnname'>text_direction</a>(&amp;self, serial: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, direction: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#674-678' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>text direction</p>
+
+<p>Sets the text direction of input text.</p>
+
+<p>It is mainly needed for showing an input cursor on the correct side of
+the editor when there is no input done yet and making sure neutral
+direction text is laid out properly.</p>
+</div></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Send' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a></code><a href='#impl-Send' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#83' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Sync' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sync.html" title="trait core::marker::Sync">Sync</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a></code><a href='#impl-Sync' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#84' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Resource' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../../../../../wayland_server/trait.Resource.html" title="trait wayland_server::Resource">Resource</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a></code><a href='#impl-Resource' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#85-152' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.ptr' class="method"><span id='ptr.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.ptr' class='fnname'>ptr</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../../../../../wayland_sys/server/enum.wl_resource.html" title="enum wayland_sys::server::wl_resource">wl_resource</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#86' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Pointer to the underlying wayland proxy object</p>
+</div><h4 id='method.from_ptr_new' class="method"><span id='from_ptr_new.v' class='invisible'><code>unsafe fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.from_ptr_new' class='fnname'>from_ptr_new</a>(ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../../../../../wayland_sys/server/enum.wl_resource.html" title="enum wayland_sys::server::wl_resource">wl_resource</a>) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#88-97' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Create an instance from a wayland pointer <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.from_ptr_new">Read more</a></p>
+</div><h4 id='method.from_ptr_initialized' class="method"><span id='from_ptr_initialized.v' class='invisible'><code>unsafe fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.from_ptr_initialized' class='fnname'>from_ptr_initialized</a>(ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../../../../../wayland_sys/server/enum.wl_resource.html" title="enum wayland_sys::server::wl_resource">wl_resource</a>) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#98-110' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Create an instance from a wayland pointer <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.from_ptr_initialized">Read more</a></p>
+</div><h4 id='method.interface_ptr' class="method"><span id='interface_ptr.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.interface_ptr' class='fnname'>interface_ptr</a>() -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../../../../../wayland_sys/common/struct.wl_interface.html" title="struct wayland_sys::common::wl_interface">wl_interface</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#112' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Pointer to the interface representation</p>
+</div><h4 id='method.interface_name' class="method"><span id='interface_name.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.interface_name' class='fnname'>interface_name</a>() -&gt; &amp;'static <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#113' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Internal wayland name of this interface</p>
+</div><h4 id='method.supported_version' class="method"><span id='supported_version.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.supported_version' class='fnname'>supported_version</a>() -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Max version of this interface supported</p>
+</div><h4 id='method.version' class="method"><span id='version.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.version' class='fnname'>version</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#115' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Current version of the interface this resource is instantiated with</p>
+</div><h4 id='method.status' class="method"><span id='status.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.status' class='fnname'>status</a>(&amp;self) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.Liveness.html" title="enum wayland_server::Liveness">Liveness</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#117-127' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Check if the resource behind this handle is actually still alive</p>
+</div><h4 id='method.equals' class="method"><span id='equals.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.equals' class='fnname'>equals</a>(&amp;self, other: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#129-131' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Check of two handles are actually the same wayland object <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.equals">Read more</a></p>
+</div><h4 id='method.set_user_data' class="method"><span id='set_user_data.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.set_user_data' class='fnname'>set_user_data</a>(&amp;self, ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#133-137' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Set a pointer associated as user data on this resource <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.set_user_data">Read more</a></p>
+</div><h4 id='method.get_user_data' class="method"><span id='get_user_data.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.get_user_data' class='fnname'>get_user_data</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#138-144' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Get the pointer associated as user data on this resource <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.get_user_data">Read more</a></p>
+</div><h4 id='method.clone_unchecked' class="method"><span id='clone_unchecked.v' class='invisible'><code>unsafe fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.clone_unchecked' class='fnname'>clone_unchecked</a>(&amp;self) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#146-151' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Unsafely clone this resource handle <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.clone_unchecked">Read more</a></p>
+</div><h4 id='method.post_error' class="method"><span id='post_error.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#method.post_error' class='fnname'>post_error</a>(&amp;self, error_code: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, msg: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_server/lib.rs.html#193-206' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Posts a protocol error to this resource <a href="../../../../../../wayland_server/trait.Resource.html#method.post_error">Read more</a></p>
+</div><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;Self&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_server/lib.rs.html#211-220' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Clone this resource handle <a href="../../../../../../wayland_server/trait.Resource.html#method.clone">Read more</a></p>
+</div><h4 id='method.same_client_as' class="method"><span id='same_client_as.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#method.same_client_as' class='fnname'>same_client_as</a>&lt;R&gt;(&amp;self, other: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>R) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a> <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;R: <a class="trait" href="../../../../../../wayland_server/trait.Resource.html" title="trait wayland_server::Resource">Resource</a>,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_server/lib.rs.html#231-243' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Checks wether this resource and the other are from the same client <a href="../../../../../../wayland_server/trait.Resource.html#method.same_client_as">Read more</a></p>
+</div></div><h3 id='impl-Implementable&lt;ID&gt;' class='impl'><span class='in-band'><code>impl&lt;ID:&nbsp;'static&gt; <a class="trait" href="../../../../../../wayland_server/trait.Implementable.html" title="trait wayland_server::Implementable">Implementable</a>&lt;ID&gt; for <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.ZwpTextInputV1.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::ZwpTextInputV1">ZwpTextInputV1</a></code><a href='#impl-Implementable&lt;ID&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#153-223' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Implementation' class="type"><span id='Implementation.t' class='invisible'><code>type <a href='../../../../../../wayland_server/trait.Implementable.html#associatedtype.Implementation' class="type">Implementation</a> = <a class="struct" href="../../../../../../wayland_protocols/unstable/text_input/v1/server/zwp_text_input_v1/struct.Implementation.html" title="struct wayland_protocols::unstable::text_input::v1::server::zwp_text_input_v1::Implementation">Implementation</a>&lt;ID&gt;</code></span></h4>
+<div class='docblock'><p>The type containing the implementation for the event callbacks</p>
+</div><h4 id='method.__dispatch_msg' class="method"><span id='__dispatch_msg.v' class='invisible'><code>unsafe fn <a href='../../../../../../wayland_server/trait.Implementable.html#tymethod.__dispatch_msg' class='fnname'>__dispatch_msg</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;opcode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;args: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../../../../../wayland_sys/common/struct.wl_argument.html" title="struct wayland_sys::common::wl_argument">wl_argument</a><br>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/text-input-v1_server_api.rs.html#156-222' title='goto source code'>[src]</a></span></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../../../../";
+        window.currentCrate = "wayland_protocols";
+    </script>
+    <script src="../../../../../../main.js"></script>
+    <script defer src="../../../../../../search-index.js"></script>
+</body>
+</html>

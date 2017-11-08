@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Implementation` struct in crate `wayland_protocols`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Implementation">
+
+    <title>wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::Implementation - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct Implementation</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>xdg_shell</a>::<wbr><a href='../../index.html'>v6</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zxdg_toplevel_v6</a></p><script>window.sidebarCurrent = {name: 'Implementation', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>xdg_shell</a>::<wbr><a href='../../index.html'>v6</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zxdg_toplevel_v6</a>::<wbr><a class="struct" href=''>Implementation</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#1336-1619' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Implementation&lt;ID&gt; {
+    pub destroy: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>),
+    pub set_parent: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>&gt;),
+    pub set_title: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>),
+    pub set_app_id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>),
+    pub show_window_menu: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: &amp;WlSeat, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>),
+    pub move_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: &amp;WlSeat, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>),
+    pub resize: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: &amp;WlSeat, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>),
+    pub set_max_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>),
+    pub set_min_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>),
+    pub set_maximized: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>),
+    pub unset_maximized: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>),
+    pub set_fullscreen: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;WlOutput&gt;),
+    pub unset_fullscreen: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>),
+    pub set_minimized: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>),
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.destroy' class="structfield">
+                           <span id='destroy.v' class='invisible'>
+                           <code>destroy: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>)</code>
+                           </span></span><div class='docblock'><p>destroy the xdg_toplevel</p>
+
+<p>Unmap and destroy the window. The window will be effectively
+hidden from the user&#39;s point of view, and all state like
+maximization, fullscreen, and so on, will be lost.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6</p>
+
+<p>This is a destructor, you cannot send events to this object once this method is called.</p>
+</div><span id='structfield.set_parent' class="structfield">
+                           <span id='set_parent.v' class='invisible'>
+                           <code>set_parent: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>&gt;)</code>
+                           </span></span><div class='docblock'><p>set the parent of this surface</p>
+
+<p>Set the &quot;parent&quot; of this surface. This window should be stacked
+above a parent. The parent surface must be mapped as long as this
+surface is mapped.</p>
+
+<p>Parent windows should be set on dialogs, toolboxes, or other
+&quot;auxiliary&quot; surfaces, so that the parent is raised when the dialog
+is raised.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, parent</p>
+</div><span id='structfield.set_title' class="structfield">
+                           <span id='set_title.v' class='invisible'>
+                           <code>set_title: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>)</code>
+                           </span></span><div class='docblock'><p>set surface title</p>
+
+<p>Set a short title for the surface.</p>
+
+<p>This string may be used to identify the surface in a task bar,
+window list, or other user interface elements provided by the
+compositor.</p>
+
+<p>The string must be encoded in UTF-8.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, title</p>
+</div><span id='structfield.set_app_id' class="structfield">
+                           <span id='set_app_id.v' class='invisible'>
+                           <code>set_app_id: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>)</code>
+                           </span></span><div class='docblock'><p>set application ID</p>
+
+<p>Set an application identifier for the surface.</p>
+
+<p>The app ID identifies the general class of applications to which
+the surface belongs. The compositor can use this to group multiple
+surfaces together, or to determine how to launch a new application.</p>
+
+<p>For D-Bus activatable applications, the app ID is used as the D-Bus
+service name.</p>
+
+<p>The compositor shell will try to group application surfaces together
+by their app ID. As a best practice, it is suggested to select app
+ID&#39;s that match the basename of the application&#39;s .desktop file.
+For example, &quot;org.freedesktop.FooViewer&quot; where the .desktop file is
+&quot;org.freedesktop.FooViewer.desktop&quot;.</p>
+
+<p>See the desktop-entry specification [0] for more details on
+application identifiers and how they relate to well-known D-Bus
+names and .desktop files.</p>
+
+<p>[0] <a href="http://standards.freedesktop.org/desktop-entry-spec/">http://standards.freedesktop.org/desktop-entry-spec/</a></p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, app_id</p>
+</div><span id='structfield.show_window_menu' class="structfield">
+                           <span id='show_window_menu.v' class='invisible'>
+                           <code>show_window_menu: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: &amp;WlSeat, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code>
+                           </span></span><div class='docblock'><p>show the window menu</p>
+
+<p>Clients implementing client-side decorations might want to show
+a context menu when right-clicking on the decorations, giving the
+user a menu that they can use to maximize or minimize the window.</p>
+
+<p>This request asks the compositor to pop up such a window menu at
+the given position, relative to the local surface coordinates of
+the parent surface. There are no guarantees as to what menu items
+the window menu contains.</p>
+
+<p>This request must be used in response to some sort of user action
+like a button press, key press, or touch down event.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, seat, serial, x, y</p>
+</div><span id='structfield.move_' class="structfield">
+                           <span id='move_.v' class='invisible'>
+                           <code>move_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: &amp;WlSeat, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>)</code>
+                           </span></span><div class='docblock'><p>start an interactive move</p>
+
+<p>Start an interactive, user-driven move of the surface.</p>
+
+<p>This request must be used in response to some sort of user action
+like a button press, key press, or touch down event. The passed
+serial is used to determine the type of interactive move (touch,
+pointer, etc).</p>
+
+<p>The server may ignore move requests depending on the state of
+the surface (e.g. fullscreen or maximized), or if the passed serial
+is no longer valid.</p>
+
+<p>If triggered, the surface will lose the focus of the device
+(wl_pointer, wl_touch, etc) used for the move. It is up to the
+compositor to visually indicate that the move is taking place, such as
+updating a pointer cursor, during the move. There is no guarantee
+that the device focus will return when the move is completed.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, seat, serial</p>
+</div><span id='structfield.resize' class="structfield">
+                           <span id='resize.v' class='invisible'>
+                           <code>resize: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: &amp;WlSeat, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>)</code>
+                           </span></span><div class='docblock'><p>start an interactive resize</p>
+
+<p>Start a user-driven, interactive resize of the surface.</p>
+
+<p>This request must be used in response to some sort of user action
+like a button press, key press, or touch down event. The passed
+serial is used to determine the type of interactive resize (touch,
+pointer, etc).</p>
+
+<p>The server may ignore resize requests depending on the state of
+the surface (e.g. fullscreen or maximized).</p>
+
+<p>If triggered, the client will receive configure events with the
+&quot;resize&quot; state enum value and the expected sizes. See the &quot;resize&quot;
+enum value for more details about what is required. The client
+must also acknowledge configure events using &quot;ack_configure&quot;. After
+the resize is completed, the client will receive another &quot;configure&quot;
+event without the resize state.</p>
+
+<p>If triggered, the surface also will lose the focus of the device
+(wl_pointer, wl_touch, etc) used for the resize. It is up to the
+compositor to visually indicate that the resize is taking place,
+such as updating a pointer cursor, during the resize. There is no
+guarantee that the device focus will return when the resize is
+completed.</p>
+
+<p>The edges parameter specifies how the surface should be resized,
+and is one of the values of the resize_edge enum. The compositor
+may use this information to update the surface position for
+example when dragging the top left corner. The compositor may also
+use this information to adapt its behavior, e.g. choose an
+appropriate cursor image.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, seat, serial, edges</p>
+</div><span id='structfield.set_max_size' class="structfield">
+                           <span id='set_max_size.v' class='invisible'>
+                           <code>set_max_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code>
+                           </span></span><div class='docblock'><p>set the maximum size</p>
+
+<p>Set a maximum size for the window.</p>
+
+<p>The client can specify a maximum size so that the compositor does
+not try to configure the window beyond this size.</p>
+
+<p>The width and height arguments are in window geometry coordinates.
+See xdg_surface.set_window_geometry.</p>
+
+<p>Values set in this way are double-buffered. They will get applied
+on the next commit.</p>
+
+<p>The compositor can use this information to allow or disallow
+different states like maximize or fullscreen and draw accurate
+animations.</p>
+
+<p>Similarly, a tiling window manager may use this information to
+place and resize client windows in a more effective way.</p>
+
+<p>The client should not rely on the compositor to obey the maximum
+size. The compositor may decide to ignore the values set by the
+client and request a larger size.</p>
+
+<p>If never set, or a value of zero in the request, means that the
+client has no expected maximum size in the given dimension.
+As a result, a client wishing to reset the maximum size
+to an unspecified state can use zero for width and height in the
+request.</p>
+
+<p>Requesting a maximum size to be smaller than the minimum size of
+a surface is illegal and will result in a protocol error.</p>
+
+<p>The width and height must be greater than or equal to zero. Using
+strictly negative values for width and height will result in a
+protocol error.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, width, height</p>
+</div><span id='structfield.set_min_size' class="structfield">
+                           <span id='set_min_size.v' class='invisible'>
+                           <code>set_min_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code>
+                           </span></span><div class='docblock'><p>set the minimum size</p>
+
+<p>Set a minimum size for the window.</p>
+
+<p>The client can specify a minimum size so that the compositor does
+not try to configure the window below this size.</p>
+
+<p>The width and height arguments are in window geometry coordinates.
+See xdg_surface.set_window_geometry.</p>
+
+<p>Values set in this way are double-buffered. They will get applied
+on the next commit.</p>
+
+<p>The compositor can use this information to allow or disallow
+different states like maximize or fullscreen and draw accurate
+animations.</p>
+
+<p>Similarly, a tiling window manager may use this information to
+place and resize client windows in a more effective way.</p>
+
+<p>The client should not rely on the compositor to obey the minimum
+size. The compositor may decide to ignore the values set by the
+client and request a smaller size.</p>
+
+<p>If never set, or a value of zero in the request, means that the
+client has no expected minimum size in the given dimension.
+As a result, a client wishing to reset the minimum size
+to an unspecified state can use zero for width and height in the
+request.</p>
+
+<p>Requesting a minimum size to be larger than the maximum size of
+a surface is illegal and will result in a protocol error.</p>
+
+<p>The width and height must be greater than or equal to zero. Using
+strictly negative values for width and height will result in a
+protocol error.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, width, height</p>
+</div><span id='structfield.set_maximized' class="structfield">
+                           <span id='set_maximized.v' class='invisible'>
+                           <code>set_maximized: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>)</code>
+                           </span></span><div class='docblock'><p>maximize the window</p>
+
+<p>Maximize the surface.</p>
+
+<p>After requesting that the surface should be maximized, the compositor
+will respond by emitting a configure event with the &quot;maximized&quot; state
+and the required window geometry. The client should then update its
+content, drawing it in a maximized state, i.e. without shadow or other
+decoration outside of the window geometry. The client must also
+acknowledge the configure when committing the new content (see
+ack_configure).</p>
+
+<p>It is up to the compositor to decide how and where to maximize the
+surface, for example which output and what region of the screen should
+be used.</p>
+
+<p>If the surface was already maximized, the compositor will still emit
+a configure event with the &quot;maximized&quot; state.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6</p>
+</div><span id='structfield.unset_maximized' class="structfield">
+                           <span id='unset_maximized.v' class='invisible'>
+                           <code>unset_maximized: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>)</code>
+                           </span></span><div class='docblock'><p>unmaximize the window</p>
+
+<p>Unmaximize the surface.</p>
+
+<p>After requesting that the surface should be unmaximized, the compositor
+will respond by emitting a configure event without the &quot;maximized&quot;
+state. If available, the compositor will include the window geometry
+dimensions the window had prior to being maximized in the configure
+request. The client must then update its content, drawing it in a
+regular state, i.e. potentially with shadow, etc. The client must also
+acknowledge the configure when committing the new content (see
+ack_configure).</p>
+
+<p>It is up to the compositor to position the surface after it was
+unmaximized; usually the position the surface had before maximizing, if
+applicable.</p>
+
+<p>If the surface was already not maximized, the compositor will still
+emit a configure event without the &quot;maximized&quot; state.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6</p>
+</div><span id='structfield.set_fullscreen' class="structfield">
+                           <span id='set_fullscreen.v' class='invisible'>
+                           <code>set_fullscreen: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>, _: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;WlOutput&gt;)</code>
+                           </span></span><div class='docblock'><p>set the window as fullscreen on a monitor</p>
+
+<p>Make the surface fullscreen.</p>
+
+<p>You can specify an output that you would prefer to be fullscreen.
+If this value is NULL, it&#39;s up to the compositor to choose which
+display will be used to map this surface.</p>
+
+<p>If the surface doesn&#39;t cover the whole output, the compositor will
+position the surface in the center of the output and compensate with
+black borders filling the rest of the output.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6, output</p>
+</div><span id='structfield.unset_fullscreen' class="structfield">
+                           <span id='unset_fullscreen.v' class='invisible'>
+                           <code>unset_fullscreen: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>)</code>
+                           </span></span><div class='docblock'><p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6</p>
+</div><span id='structfield.set_minimized' class="structfield">
+                           <span id='set_minimized.v' class='invisible'>
+                           <code>set_minimized: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.ZxdgToplevelV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::ZxdgToplevelV6">ZxdgToplevelV6</a>)</code>
+                           </span></span><div class='docblock'><p>set the window as minimized</p>
+
+<p>Request that the compositor minimize your surface. There is no
+way to know if the surface is currently minimized, nor is there
+any way to unset minimization on this surface.</p>
+
+<p>If you are looking to throttle redrawing when minimized, please
+instead use the wl_surface.frame event for this, as this will
+also work with live previews on windows in Alt-Tab, Expose or
+similar compositor features.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_toplevel_v6</p>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Copy' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-Copy' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#1621' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#1622-1626' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::Implementation">Implementation</a>&lt;ID&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#1623-1625' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 id='impl-PartialEq' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-PartialEq' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#1628-1647' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, other: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_toplevel_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_toplevel_v6::Implementation">Implementation</a>&lt;ID&gt;) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#1629-1646' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/cmp.rs.html#121' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../../../../";
+        window.currentCrate = "wayland_protocols";
+    </script>
+    <script src="../../../../../../main.js"></script>
+    <script defer src="../../../../../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ZwpTabletToolV2` struct in crate `wayland_protocols`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ZwpTabletToolV2">
+
+    <title>wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ZwpTabletToolV2</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>tablet</a>::<wbr><a href='../../index.html'>v2</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zwp_tablet_tool_v2</a></p><script>window.sidebarCurrent = {name: 'ZwpTabletToolV2', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>tablet</a>::<wbr><a href='../../index.html'>v2</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zwp_tablet_tool_v2</a>::<wbr><a class="struct" href=''>ZwpTabletToolV2</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#443-446' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ZwpTabletToolV2 { /* fields omitted */ }</pre>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#762-1050' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method._type' class="method"><span id='_type.v' class='invisible'><code>fn <a href='#method._type' class='fnname'>_type</a>(&amp;self, tool_type: <a class="enum" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/enum.Type.html" title="enum wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::Type">Type</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#770-774' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>tool type</p>
+
+<p>The tool type is the high-level type of the tool and usually decides
+the interaction expected from this tool.</p>
+
+<p>This event is sent in the initial burst of events before the
+wp_tablet_tool.done event.</p>
+</div><h4 id='method.hardware_serial' class="method"><span id='hardware_serial.v' class='invisible'><code>fn <a href='#method.hardware_serial' class='fnname'>hardware_serial</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;hardware_serial_hi: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;hardware_serial_lo: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#792-796' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>unique hardware serial number of the tool</p>
+
+<p>If the physical tool can be identified by a unique 64-bit serial
+number, this event notifies the client of this serial number.</p>
+
+<p>If multiple tablets are available in the same seat and the tool is
+uniquely identifiable by the serial number, that tool may move
+between tablets.</p>
+
+<p>Otherwise, if the tool has no serial number and this event is
+missing, the tool is tied to the tablet it first comes into
+proximity with. Even if the physical tool is used on multiple
+tablets, separate wp_tablet_tool objects will be created, one per
+tablet.</p>
+
+<p>This event is sent in the initial burst of events before the
+wp_tablet_tool.done event.</p>
+</div><h4 id='method.hardware_id_wacom' class="method"><span id='hardware_id_wacom.v' class='invisible'><code>fn <a href='#method.hardware_id_wacom' class='fnname'>hardware_id_wacom</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;hardware_id_hi: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;hardware_id_lo: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a><br>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#809-813' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>hardware id notification in Wacom&#39;s format</p>
+
+<p>This event notifies the client of a hardware id available on this tool.</p>
+
+<p>The hardware id is a device-specific 64-bit id that provides extra
+information about the tool in use, beyond the wl_tool.type
+enumeration. The format of the id is specific to tablets made by
+Wacom Inc. For example, the hardware id of a Wacom Grip
+Pen (a stylus) is 0x802.</p>
+
+<p>This event is sent in the initial burst of events before the
+wp_tablet_tool.done event.</p>
+</div><h4 id='method.capability' class="method"><span id='capability.v' class='invisible'><code>fn <a href='#method.capability' class='fnname'>capability</a>(&amp;self, capability: <a class="enum" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/enum.Capability.html" title="enum wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::Capability">Capability</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#823-827' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>tool capability notification</p>
+
+<p>This event notifies the client of any capabilities of this tool,
+beyond the main set of x/y axes and tip up/down detection.</p>
+
+<p>One event is sent for each extra capability available on this tool.</p>
+
+<p>This event is sent in the initial burst of events before the
+wp_tablet_tool.done event.</p>
+</div><h4 id='method.done' class="method"><span id='done.v' class='invisible'><code>fn <a href='#method.done' class='fnname'>done</a>(&amp;self) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#833-837' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>tool description events sequence complete</p>
+
+<p>This event signals the end of the initial burst of descriptive
+events. A client may consider the static description of the tool to
+be complete and finalize initialization of the tool.</p>
+</div><h4 id='method.removed' class="method"><span id='removed.v' class='invisible'><code>fn <a href='#method.removed' class='fnname'>removed</a>(&amp;self) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#854-858' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>tool removed</p>
+
+<p>This event is sent when the tool is removed from the system and will
+send no further events. Should the physical tool come back into
+proximity later, a new wp_tablet_tool object will be created.</p>
+
+<p>It is compositor-dependent when a tool is removed. A compositor may
+remove a tool on proximity out, tablet removal or any other reason.
+A compositor may also keep a tool alive until shutdown.</p>
+
+<p>If the tool is currently in proximity, a proximity_out event will be
+sent before the removed event. See wp_tablet_tool.proximity_out for
+the handling of any buttons logically down.</p>
+
+<p>When this event is received, the client must wp_tablet_tool.destroy
+the object.</p>
+</div><h4 id='method.proximity_in' class="method"><span id='proximity_in.v' class='invisible'><code>fn <a href='#method.proximity_in' class='fnname'>proximity_in</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;serial: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;tablet: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_v2/struct.ZwpTabletV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_v2::ZwpTabletV2">ZwpTabletV2</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;surface: &amp;WlSurface<br>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#870-874' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>proximity in event</p>
+
+<p>Notification that this tool is focused on a certain surface.</p>
+
+<p>This event can be received when the tool has moved from one surface to
+another, or when the tool has come back into proximity above the
+surface.</p>
+
+<p>If any button is logically down when the tool comes into proximity,
+the respective button event is sent after the proximity_in event but
+within the same frame as the proximity_in event.</p>
+</div><h4 id='method.proximity_out' class="method"><span id='proximity_out.v' class='invisible'><code>fn <a href='#method.proximity_out' class='fnname'>proximity_out</a>(&amp;self) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#889-893' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>proximity out event</p>
+
+<p>Notification that this tool has either left proximity, or is no
+longer focused on a certain surface.</p>
+
+<p>When the tablet tool leaves proximity of the tablet, button release
+events are sent for each button that was held down at the time of
+leaving proximity. These events are sent before the proximity_out
+event but within the same wp_tablet.frame.</p>
+
+<p>If the tool stays within proximity of the tablet, but the focus
+changes from one surface to another, a button release event may not
+be sent until the button is actually released or the tool leaves the
+proximity of the tablet.</p>
+</div><h4 id='method.down' class="method"><span id='down.v' class='invisible'><code>fn <a href='#method.down' class='fnname'>down</a>(&amp;self, serial: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#908-912' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>tablet tool is making contact</p>
+
+<p>Sent whenever the tablet tool comes in contact with the surface of the
+tablet.</p>
+
+<p>If the tool is already in contact with the tablet when entering the
+input region, the client owning said region will receive a
+wp_tablet.proximity_in event, followed by a wp_tablet.down
+event and a wp_tablet.frame event.</p>
+
+<p>Note that this event describes logical contact, not physical
+contact. On some devices, a compositor may not consider a tool in
+logical contact until a minimum physical pressure threshold is
+exceeded.</p>
+</div><h4 id='method.up' class="method"><span id='up.v' class='invisible'><code>fn <a href='#method.up' class='fnname'>up</a>(&amp;self) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#931-935' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>tablet tool is no longer making contact</p>
+
+<p>Sent whenever the tablet tool stops making contact with the surface of
+the tablet, or when the tablet tool moves out of the input region
+and the compositor grab (if any) is dismissed.</p>
+
+<p>If the tablet tool moves out of the input region while in contact
+with the surface of the tablet and the compositor does not have an
+ongoing grab on the surface, the client owning said region will
+receive a wp_tablet.up event, followed by a wp_tablet.proximity_out
+event and a wp_tablet.frame event. If the compositor has an ongoing
+grab on this device, this event sequence is sent whenever the grab
+is dismissed in the future.</p>
+
+<p>Note that this event describes logical contact, not physical
+contact. On some devices, a compositor may not consider a tool out
+of logical contact until physical pressure falls below a specific
+threshold.</p>
+</div><h4 id='method.motion' class="method"><span id='motion.v' class='invisible'><code>fn <a href='#method.motion' class='fnname'>motion</a>(&amp;self, x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>, y: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#939-945' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>motion event</p>
+
+<p>Sent whenever a tablet tool moves.</p>
+</div><h4 id='method.pressure' class="method"><span id='pressure.v' class='invisible'><code>fn <a href='#method.pressure' class='fnname'>pressure</a>(&amp;self, pressure: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#953-957' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>pressure change event</p>
+
+<p>Sent whenever the pressure axis on a tool changes. The value of this
+event is normalized to a value between 0 and 65535.</p>
+
+<p>Note that pressure may be nonzero even when a tool is not in logical
+contact. See the down and up events for more details.</p>
+</div><h4 id='method.distance' class="method"><span id='distance.v' class='invisible'><code>fn <a href='#method.distance' class='fnname'>distance</a>(&amp;self, distance: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#965-969' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>distance change event</p>
+
+<p>Sent whenever the distance axis on a tool changes. The value of this
+event is normalized to a value between 0 and 65535.</p>
+
+<p>Note that distance may be nonzero even when a tool is not in logical
+contact. See the down and up events for more details.</p>
+</div><h4 id='method.tilt' class="method"><span id='tilt.v' class='invisible'><code>fn <a href='#method.tilt' class='fnname'>tilt</a>(&amp;self, tilt_x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>, tilt_y: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#976-982' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>tilt change event</p>
+
+<p>Sent whenever one or both of the tilt axes on a tool change. Each tilt
+value is in degrees, relative to the z-axis of the tablet.
+The angle is positive when the top of a tool tilts along the
+positive x or y axis.</p>
+</div><h4 id='method.rotation' class="method"><span id='rotation.v' class='invisible'><code>fn <a href='#method.rotation' class='fnname'>rotation</a>(&amp;self, degrees: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#988-993' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>z-rotation change event</p>
+
+<p>Sent whenever the z-rotation axis on the tool changes. The
+rotation value is in degrees clockwise from the tool&#39;s
+logical neutral position.</p>
+</div><h4 id='method.slider' class="method"><span id='slider.v' class='invisible'><code>fn <a href='#method.slider' class='fnname'>slider</a>(&amp;self, position: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#1001-1005' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Slider position change event</p>
+
+<p>Sent whenever the slider position on the tool changes. The
+value is normalized between -65535 and 65535, with 0 as the logical
+neutral position of the slider.</p>
+
+<p>The slider is available on e.g. the Wacom Airbrush tool.</p>
+</div><h4 id='method.wheel' class="method"><span id='wheel.v' class='invisible'><code>fn <a href='#method.wheel' class='fnname'>wheel</a>(&amp;self, degrees: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f64.html">f64</a>, clicks: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#1020-1025' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Wheel delta event</p>
+
+<p>Sent whenever the wheel on the tool emits an event. This event
+contains two values for the same axis change. The degrees value is
+in the same orientation as the wl_pointer.vertical_scroll axis. The
+clicks value is in discrete logical clicks of the mouse wheel. This
+value may be zero if the movement of the wheel was less
+than one logical click.</p>
+
+<p>Clients should choose either value and avoid mixing degrees and
+clicks. The compositor may accumulate values smaller than a logical
+click and emulate click events when a certain threshold is met.
+Thus, wl_tablet_tool.wheel events with non-zero clicks values may
+have different degrees values.</p>
+</div><h4 id='method.button' class="method"><span id='button.v' class='invisible'><code>fn <a href='#method.button' class='fnname'>button</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;serial: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;button: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;state: <a class="enum" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/enum.ButtonState.html" title="enum wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ButtonState">ButtonState</a><br>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#1034-1038' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>button event</p>
+
+<p>Sent whenever a button on the tool is pressed or released.</p>
+
+<p>If a button is held down when the tool moves in or out of proximity,
+button events are generated by the compositor. See
+wp_tablet_tool.proximity_in and wp_tablet_tool.proximity_out for
+details.</p>
+</div><h4 id='method.frame' class="method"><span id='frame.v' class='invisible'><code>fn <a href='#method.frame' class='fnname'>frame</a>(&amp;self, time: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.EventResult.html" title="enum wayland_server::EventResult">EventResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#1045-1049' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>frame event</p>
+
+<p>Marks the end of a series of axis and/or button updates from the
+tablet. The Wayland protocol requires axis updates to be sent
+sequentially, however all events within a frame should be considered
+one hardware event.</p>
+</div></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Send' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a></code><a href='#impl-Send' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#448' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Sync' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sync.html" title="trait core::marker::Sync">Sync</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a></code><a href='#impl-Sync' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#449' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Resource' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../../../../../wayland_server/trait.Resource.html" title="trait wayland_server::Resource">Resource</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a></code><a href='#impl-Resource' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#450-517' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.ptr' class="method"><span id='ptr.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.ptr' class='fnname'>ptr</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../../../../../wayland_sys/server/enum.wl_resource.html" title="enum wayland_sys::server::wl_resource">wl_resource</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#451' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Pointer to the underlying wayland proxy object</p>
+</div><h4 id='method.from_ptr_new' class="method"><span id='from_ptr_new.v' class='invisible'><code>unsafe fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.from_ptr_new' class='fnname'>from_ptr_new</a>(ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../../../../../wayland_sys/server/enum.wl_resource.html" title="enum wayland_sys::server::wl_resource">wl_resource</a>) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#453-462' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Create an instance from a wayland pointer <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.from_ptr_new">Read more</a></p>
+</div><h4 id='method.from_ptr_initialized' class="method"><span id='from_ptr_initialized.v' class='invisible'><code>unsafe fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.from_ptr_initialized' class='fnname'>from_ptr_initialized</a>(ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../../../../../../wayland_sys/server/enum.wl_resource.html" title="enum wayland_sys::server::wl_resource">wl_resource</a>) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#463-475' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Create an instance from a wayland pointer <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.from_ptr_initialized">Read more</a></p>
+</div><h4 id='method.interface_ptr' class="method"><span id='interface_ptr.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.interface_ptr' class='fnname'>interface_ptr</a>() -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../../../../../wayland_sys/common/struct.wl_interface.html" title="struct wayland_sys::common::wl_interface">wl_interface</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#477' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Pointer to the interface representation</p>
+</div><h4 id='method.interface_name' class="method"><span id='interface_name.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.interface_name' class='fnname'>interface_name</a>() -&gt; &amp;'static <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#478' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Internal wayland name of this interface</p>
+</div><h4 id='method.supported_version' class="method"><span id='supported_version.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.supported_version' class='fnname'>supported_version</a>() -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#479' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Max version of this interface supported</p>
+</div><h4 id='method.version' class="method"><span id='version.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.version' class='fnname'>version</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#480' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Current version of the interface this resource is instantiated with</p>
+</div><h4 id='method.status' class="method"><span id='status.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.status' class='fnname'>status</a>(&amp;self) -&gt; <a class="enum" href="../../../../../../wayland_server/enum.Liveness.html" title="enum wayland_server::Liveness">Liveness</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#482-492' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Check if the resource behind this handle is actually still alive</p>
+</div><h4 id='method.equals' class="method"><span id='equals.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.equals' class='fnname'>equals</a>(&amp;self, other: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#494-496' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Check of two handles are actually the same wayland object <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.equals">Read more</a></p>
+</div><h4 id='method.set_user_data' class="method"><span id='set_user_data.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.set_user_data' class='fnname'>set_user_data</a>(&amp;self, ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#498-502' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Set a pointer associated as user data on this resource <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.set_user_data">Read more</a></p>
+</div><h4 id='method.get_user_data' class="method"><span id='get_user_data.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.get_user_data' class='fnname'>get_user_data</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#503-509' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Get the pointer associated as user data on this resource <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.get_user_data">Read more</a></p>
+</div><h4 id='method.clone_unchecked' class="method"><span id='clone_unchecked.v' class='invisible'><code>unsafe fn <a href='../../../../../../wayland_server/trait.Resource.html#tymethod.clone_unchecked' class='fnname'>clone_unchecked</a>(&amp;self) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#511-516' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Unsafely clone this resource handle <a href="../../../../../../wayland_server/trait.Resource.html#tymethod.clone_unchecked">Read more</a></p>
+</div><h4 id='method.post_error' class="method"><span id='post_error.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#method.post_error' class='fnname'>post_error</a>(&amp;self, error_code: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, msg: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_server/lib.rs.html#193-206' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Posts a protocol error to this resource <a href="../../../../../../wayland_server/trait.Resource.html#method.post_error">Read more</a></p>
+</div><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;Self&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_server/lib.rs.html#211-220' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Clone this resource handle <a href="../../../../../../wayland_server/trait.Resource.html#method.clone">Read more</a></p>
+</div><h4 id='method.same_client_as' class="method"><span id='same_client_as.v' class='invisible'><code>fn <a href='../../../../../../wayland_server/trait.Resource.html#method.same_client_as' class='fnname'>same_client_as</a>&lt;R&gt;(&amp;self, other: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>R) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a> <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;R: <a class="trait" href="../../../../../../wayland_server/trait.Resource.html" title="trait wayland_server::Resource">Resource</a>,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_server/lib.rs.html#231-243' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Checks wether this resource and the other are from the same client <a href="../../../../../../wayland_server/trait.Resource.html#method.same_client_as">Read more</a></p>
+</div></div><h3 id='impl-Implementable&lt;ID&gt;' class='impl'><span class='in-band'><code>impl&lt;ID:&nbsp;'static&gt; <a class="trait" href="../../../../../../wayland_server/trait.Implementable.html" title="trait wayland_server::Implementable">Implementable</a>&lt;ID&gt; for <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.ZwpTabletToolV2.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::ZwpTabletToolV2">ZwpTabletToolV2</a></code><a href='#impl-Implementable&lt;ID&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#518-553' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Implementation' class="type"><span id='Implementation.t' class='invisible'><code>type <a href='../../../../../../wayland_server/trait.Implementable.html#associatedtype.Implementation' class="type">Implementation</a> = <a class="struct" href="../../../../../../wayland_protocols/unstable/tablet/v2/server/zwp_tablet_tool_v2/struct.Implementation.html" title="struct wayland_protocols::unstable::tablet::v2::server::zwp_tablet_tool_v2::Implementation">Implementation</a>&lt;ID&gt;</code></span></h4>
+<div class='docblock'><p>The type containing the implementation for the event callbacks</p>
+</div><h4 id='method.__dispatch_msg' class="method"><span id='__dispatch_msg.v' class='invisible'><code>unsafe fn <a href='../../../../../../wayland_server/trait.Implementable.html#tymethod.__dispatch_msg' class='fnname'>__dispatch_msg</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;self, <br>&nbsp;&nbsp;&nbsp;&nbsp;client: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;opcode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;args: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="struct" href="../../../../../../wayland_sys/common/struct.wl_argument.html" title="struct wayland_sys::common::wl_argument">wl_argument</a><br>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/tablet-v2_server_api.rs.html#521-552' title='goto source code'>[src]</a></span></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../../../../";
+        window.currentCrate = "wayland_protocols";
+    </script>
+    <script src="../../../../../../main.js"></script>
+    <script defer src="../../../../../../search-index.js"></script>
+</body>
+</html>

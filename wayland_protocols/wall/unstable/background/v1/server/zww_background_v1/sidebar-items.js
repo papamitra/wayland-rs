@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Error","ww_background error values"],["FitMethod","ww_background fit method values"]],"struct":[["Implementation",""],["ZwwBackgroundV1",""]]});

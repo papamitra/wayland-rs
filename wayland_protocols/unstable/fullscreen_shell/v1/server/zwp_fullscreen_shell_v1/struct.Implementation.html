@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Implementation` struct in crate `wayland_protocols`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Implementation">
+
+    <title>wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::Implementation - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct Implementation</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>fullscreen_shell</a>::<wbr><a href='../../index.html'>v1</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zwp_fullscreen_shell_v1</a></p><script>window.sidebarCurrent = {name: 'Implementation', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>fullscreen_shell</a>::<wbr><a href='../../index.html'>v1</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zwp_fullscreen_shell_v1</a>::<wbr><a class="struct" href=''>Implementation</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/fullscreen-shell-v1_server_api.rs.html#273-350' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Implementation&lt;ID&gt; {
+    pub release: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.ZwpFullscreenShellV1.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::ZwpFullscreenShellV1">ZwpFullscreenShellV1</a>),
+    pub present_surface: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.ZwpFullscreenShellV1.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::ZwpFullscreenShellV1">ZwpFullscreenShellV1</a>, _: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;WlSurface&gt;, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, _: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;WlOutput&gt;),
+    pub present_surface_for_mode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.ZwpFullscreenShellV1.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::ZwpFullscreenShellV1">ZwpFullscreenShellV1</a>, _: &amp;WlSurface, _: &amp;WlOutput, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_mode_feedback_v1/struct.ZwpFullscreenShellModeFeedbackV1.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_mode_feedback_v1::ZwpFullscreenShellModeFeedbackV1">ZwpFullscreenShellModeFeedbackV1</a>),
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.release' class="structfield">
+                           <span id='release.v' class='invisible'>
+                           <code>release: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.ZwpFullscreenShellV1.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::ZwpFullscreenShellV1">ZwpFullscreenShellV1</a>)</code>
+                           </span></span><div class='docblock'><p>release the wl_fullscreen_shell interface</p>
+
+<p>Release the binding from the wl_fullscreen_shell interface.</p>
+
+<p>This destroys the server-side object and frees this binding.  If
+the client binds to wl_fullscreen_shell multiple times, it may wish
+to free some of those bindings.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zwp_fullscreen_shell_v1</p>
+
+<p>This is a destructor, you cannot send events to this object once this method is called.</p>
+</div><span id='structfield.present_surface' class="structfield">
+                           <span id='present_surface.v' class='invisible'>
+                           <code>present_surface: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.ZwpFullscreenShellV1.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::ZwpFullscreenShellV1">ZwpFullscreenShellV1</a>, _: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;WlSurface&gt;, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>, _: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;WlOutput&gt;)</code>
+                           </span></span><div class='docblock'><p>present surface for display</p>
+
+<p>Present a surface on the given output.</p>
+
+<p>If the output is null, the compositor will present the surface on
+whatever display (or displays) it thinks best.  In particular, this
+may replace any or all surfaces currently presented so it should
+not be used in combination with placing surfaces on specific
+outputs.</p>
+
+<p>The method parameter is a hint to the compositor for how the surface
+is to be presented.  In particular, it tells the compositor how to
+handle a size mismatch between the presented surface and the
+output.  The compositor is free to ignore this parameter.</p>
+
+<p>The &quot;zoom&quot;, &quot;zoom_crop&quot;, and &quot;stretch&quot; methods imply a scaling
+operation on the surface.  This will override any kind of output
+scaling, so the buffer_scale property of the surface is effectively
+ignored.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zwp_fullscreen_shell_v1, surface, method, output</p>
+</div><span id='structfield.present_surface_for_mode' class="structfield">
+                           <span id='present_surface_for_mode.v' class='invisible'>
+                           <code>present_surface_for_mode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.ZwpFullscreenShellV1.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::ZwpFullscreenShellV1">ZwpFullscreenShellV1</a>, _: &amp;WlSurface, _: &amp;WlOutput, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_mode_feedback_v1/struct.ZwpFullscreenShellModeFeedbackV1.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_mode_feedback_v1::ZwpFullscreenShellModeFeedbackV1">ZwpFullscreenShellModeFeedbackV1</a>)</code>
+                           </span></span><div class='docblock'><p>present surface for display at a particular mode</p>
+
+<p>Presents a surface on the given output for a particular mode.</p>
+
+<p>If the current size of the output differs from that of the surface,
+the compositor will attempt to change the size of the output to
+match the surface.  The result of the mode-switch operation will be
+returned via the provided wl_fullscreen_shell_mode_feedback object.</p>
+
+<p>If the current output mode matches the one requested or if the
+compositor successfully switches the mode to match the surface,
+then the mode_successful event will be sent and the output will
+contain the contents of the given surface.  If the compositor
+cannot match the output size to the surface size, the mode_failed
+will be sent and the output will contain the contents of the
+previously presented surface (if any).  If another surface is
+presented on the given output before either of these has a chance
+to happen, the present_cancelled event will be sent.</p>
+
+<p>Due to race conditions and other issues unknown to the client, no
+mode-switch operation is guaranteed to succeed.  However, if the
+mode is one advertised by wl_output.mode or if the compositor
+advertises the ARBITRARY_MODES capability, then the client should
+expect that the mode-switch operation will usually succeed.</p>
+
+<p>If the size of the presented surface changes, the resulting output
+is undefined.  The compositor may attempt to change the output mode
+to compensate.  However, there is no guarantee that a suitable mode
+will be found and the client has no way to be notified of success
+or failure.</p>
+
+<p>The framerate parameter specifies the desired framerate for the
+output in mHz.  The compositor is free to ignore this parameter.  A
+value of 0 indicates that the client has no preference.</p>
+
+<p>If the value of wl_output.scale differs from wl_surface.buffer_scale,
+then the compositor may choose a mode that matches either the buffer
+size or the surface size.  In either case, the surface will fill the
+output.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zwp_fullscreen_shell_v1, surface, output, framerate, feedback</p>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Copy' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.Implementation.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-Copy' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/fullscreen-shell-v1_server_api.rs.html#352' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.Implementation.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/fullscreen-shell-v1_server_api.rs.html#353-357' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.Implementation.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::Implementation">Implementation</a>&lt;ID&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/fullscreen-shell-v1_server_api.rs.html#354-356' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 id='impl-PartialEq' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.Implementation.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-PartialEq' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/fullscreen-shell-v1_server_api.rs.html#359-367' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, other: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/fullscreen_shell/v1/server/zwp_fullscreen_shell_v1/struct.Implementation.html" title="struct wayland_protocols::unstable::fullscreen_shell::v1::server::zwp_fullscreen_shell_v1::Implementation">Implementation</a>&lt;ID&gt;) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/fullscreen-shell-v1_server_api.rs.html#360-366' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/cmp.rs.html#121' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../../../../";
+        window.currentCrate = "wayland_protocols";
+    </script>
+    <script src="../../../../../../main.js"></script>
+    <script defer src="../../../../../../search-index.js"></script>
+</body>
+</html>

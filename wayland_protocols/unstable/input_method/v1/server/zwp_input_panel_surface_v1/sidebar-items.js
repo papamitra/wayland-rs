@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Position",""]],"struct":[["Implementation",""],["ZwpInputPanelSurfaceV1",""]]});

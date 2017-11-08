@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Implementation` struct in crate `wayland_protocols`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Implementation">
+
+    <title>wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Implementation - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct Implementation</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>xdg_shell</a>::<wbr><a href='../../index.html'>v6</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zxdg_positioner_v6</a></p><script>window.sidebarCurrent = {name: 'Implementation', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../../../../index.html'>wayland_protocols</a>::<wbr><a href='../../../../index.html'>unstable</a>::<wbr><a href='../../../index.html'>xdg_shell</a>::<wbr><a href='../../index.html'>v6</a>::<wbr><a href='../index.html'>server</a>::<wbr><a href='index.html'>zxdg_positioner_v6</a>::<wbr><a class="struct" href=''>Implementation</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#614-711' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Implementation&lt;ID&gt; {
+    pub destroy: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>),
+    pub set_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>),
+    pub set_anchor_rect: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>),
+    pub set_anchor: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Anchor.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Anchor">Anchor</a>),
+    pub set_gravity: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Gravity.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Gravity">Gravity</a>),
+    pub set_constraint_adjustment: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>),
+    pub set_offset: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>),
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.destroy' class="structfield">
+                           <span id='destroy.v' class='invisible'>
+                           <code>destroy: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>)</code>
+                           </span></span><div class='docblock'><p>destroy the xdg_positioner object</p>
+
+<p>Notify the compositor that the xdg_positioner will no longer be used.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_positioner_v6</p>
+
+<p>This is a destructor, you cannot send events to this object once this method is called.</p>
+</div><span id='structfield.set_size' class="structfield">
+                           <span id='set_size.v' class='invisible'>
+                           <code>set_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code>
+                           </span></span><div class='docblock'><p>set the size of the to-be positioned rectangle</p>
+
+<p>Set the size of the surface that is to be positioned with the positioner
+object. The size is in surface-local coordinates and corresponds to the
+window geometry. See xdg_surface.set_window_geometry.</p>
+
+<p>If a zero or negative size is set the invalid_input error is raised.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_positioner_v6, width, height</p>
+</div><span id='structfield.set_anchor_rect' class="structfield">
+                           <span id='set_anchor_rect.v' class='invisible'>
+                           <code>set_anchor_rect: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code>
+                           </span></span><div class='docblock'><p>set the anchor rectangle within the parent surface</p>
+
+<p>Specify the anchor rectangle within the parent surface that the child
+surface will be placed relative to. The rectangle is relative to the
+window geometry as defined by xdg_surface.set_window_geometry of the
+parent surface. The rectangle must be at least 1x1 large.</p>
+
+<p>When the xdg_positioner object is used to position a child surface, the
+anchor rectangle may not extend outside the window geometry of the
+positioned child&#39;s parent surface.</p>
+
+<p>If a zero or negative size is set the invalid_input error is raised.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_positioner_v6, x, y, width, height</p>
+</div><span id='structfield.set_anchor' class="structfield">
+                           <span id='set_anchor.v' class='invisible'>
+                           <code>set_anchor: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Anchor.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Anchor">Anchor</a>)</code>
+                           </span></span><div class='docblock'><p>set anchor rectangle anchor edges</p>
+
+<p>Defines a set of edges for the anchor rectangle. These are used to
+derive an anchor point that the child surface will be positioned
+relative to. If two orthogonal edges are specified (e.g. &#39;top&#39; and
+&#39;left&#39;), then the anchor point will be the intersection of the edges
+(e.g. the top left position of the rectangle); otherwise, the derived
+anchor point will be centered on the specified edge, or in the center of
+the anchor rectangle if no edge is specified.</p>
+
+<p>If two parallel anchor edges are specified (e.g. &#39;left&#39; and &#39;right&#39;),
+the invalid_input error is raised.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_positioner_v6, anchor</p>
+</div><span id='structfield.set_gravity' class="structfield">
+                           <span id='set_gravity.v' class='invisible'>
+                           <code>set_gravity: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Gravity.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Gravity">Gravity</a>)</code>
+                           </span></span><div class='docblock'><p>set child surface gravity</p>
+
+<p>Defines in what direction a surface should be positioned, relative to
+the anchor point of the parent surface. If two orthogonal gravities are
+specified (e.g. &#39;bottom&#39; and &#39;right&#39;), then the child surface will be
+placed in the specified direction; otherwise, the child surface will be
+centered over the anchor point on any axis that had no gravity
+specified.</p>
+
+<p>If two parallel gravities are specified (e.g. &#39;left&#39; and &#39;right&#39;), the
+invalid_input error is raised.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_positioner_v6, gravity</p>
+</div><span id='structfield.set_constraint_adjustment' class="structfield">
+                           <span id='set_constraint_adjustment.v' class='invisible'>
+                           <code>set_constraint_adjustment: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>)</code>
+                           </span></span><div class='docblock'><p>set the adjustment to be done when constrained</p>
+
+<p>Specify how the window should be positioned if the originally intended
+position caused the surface to be constrained, meaning at least
+partially outside positioning boundaries set by the compositor. The
+adjustment is set by constructing a bitmask describing the adjustment to
+be made when the surface is constrained on that axis.</p>
+
+<p>If no bit for one axis is set, the compositor will assume that the child
+surface should not change its position on that axis when constrained.</p>
+
+<p>If more than one bit for one axis is set, the order of how adjustments
+are applied is specified in the corresponding adjustment descriptions.</p>
+
+<p>The default adjustment is none.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_positioner_v6, constraint_adjustment</p>
+</div><span id='structfield.set_offset' class="structfield">
+                           <span id='set_offset.v' class='invisible'>
+                           <code>set_offset: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: &amp;mut <a class="struct" href="../../../../../../wayland_server/event_loop/struct.EventLoopHandle.html" title="struct wayland_server::event_loop::EventLoopHandle">EventLoopHandle</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>ID, _: &amp;<a class="struct" href="../../../../../../wayland_server/client/struct.Client.html" title="struct wayland_server::client::Client">Client</a>, _: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.ZxdgPositionerV6.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::ZxdgPositionerV6">ZxdgPositionerV6</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, _: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>)</code>
+                           </span></span><div class='docblock'><p>set surface position offset</p>
+
+<p>Specify the surface position offset relative to the position of the
+anchor on the anchor rectangle and the anchor on the surface. For
+example if the anchor of the anchor rectangle is at (x, y), the surface
+has the gravity bottom|right, and the offset is (ox, oy), the calculated
+surface position will be (x + ox, y + oy). The offset position of the
+surface is the one used for constraint testing. See
+set_constraint_adjustment.</p>
+
+<p>An example use case is placing a popup menu on top of a user interface
+element, while aligning the user interface element of the parent surface
+with some user interface element placed somewhere in the popup surface.</p>
+
+<p><strong>Arguments:</strong> event_queue_handle, interface_data, client, zxdg_positioner_v6, x, y</p>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Copy' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-Copy' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#713' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#714-718' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Implementation">Implementation</a>&lt;ID&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#715-717' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 id='impl-PartialEq' class='impl'><span class='in-band'><code>impl&lt;ID&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Implementation">Implementation</a>&lt;ID&gt;</code><a href='#impl-PartialEq' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#720-732' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, other: &amp;<a class="struct" href="../../../../../../wayland_protocols/unstable/xdg_shell/v6/server/zxdg_positioner_v6/struct.Implementation.html" title="struct wayland_protocols::unstable::xdg_shell::v6::server::zxdg_positioner_v6::Implementation">Implementation</a>&lt;ID&gt;) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../../../../src/wayland_protocols/home/travis/build/Smithay/wayland-rs/target/debug/build/wayland-protocols-33057ee295f05294/out/xdg-shell-v6_server_api.rs.html#721-731' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/cmp.rs.html#121' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../../../../";
+        window.currentCrate = "wayland_protocols";
+    </script>
+    <script src="../../../../../../main.js"></script>
+    <script defer src="../../../../../../search-index.js"></script>
+</body>
+</html>

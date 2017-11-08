@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `EventLoopHandle` struct in crate `wayland_server`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, EventLoopHandle">
+
+    <title>wayland_server::EventLoopHandle - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct EventLoopHandle</p><div class="block items"><ul><li><a href="#methods">Methods</a></li></ul></div><p class='location'><a href='index.html'>wayland_server</a></p><script>window.sidebarCurrent = {name: 'EventLoopHandle', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>wayland_server</a>::<wbr><a class="struct" href=''>EventLoopHandle</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/wayland_server/event_loop.rs.html#66-71' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct EventLoopHandle { /* fields omitted */ }</pre><div class='docblock'><p>Handle to an event loop</p>
+
+<p>This handle gives you access to methods on an event loop
+that are safe to do from within a callback.</p>
+
+<p>They are also available on an <code>EventLoop</code> object via <code>Deref</code>.</p>
+</div>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../wayland_server/struct.EventLoopHandle.html" title="struct wayland_server::EventLoopHandle">EventLoopHandle</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#73-324' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.register' class="method"><span id='register.v' class='invisible'><code>fn <a href='#method.register' class='fnname'>register</a>&lt;R, ID&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;resource: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>R, <br>&nbsp;&nbsp;&nbsp;&nbsp;implementation: R::<a class="type" href="../wayland_server/trait.Implementable.html#associatedtype.Implementation" title="type wayland_server::Implementable::Implementation">Implementation</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;idata: ID, <br>&nbsp;&nbsp;&nbsp;&nbsp;destructor: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.fn.html">fn</a>(_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>R)&gt;<br>) -&gt; <a class="enum" href="../wayland_server/enum.RegisterStatus.html" title="enum wayland_server::RegisterStatus">RegisterStatus</a> <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;R: <a class="trait" href="../wayland_server/trait.Resource.html" title="trait wayland_server::Resource">Resource</a> + <a class="trait" href="../wayland_server/trait.Implementable.html" title="trait wayland_server::Implementable">Implementable</a>&lt;ID&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;ID: 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#92-128' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Register a resource to this event loop.</p>
+
+<p>You are required to provide a valid implementation for this proxy
+as well as some associated implementation data. This implementation
+is expected to be a struct holding the various relevant
+function pointers.</p>
+
+<p>This implementation data can typically contain indexes to state value
+that the implementation will need to work on.</p>
+
+<p>If you provide a destructor function, it will be called whenever the resource
+is destroyed, be it at the client request or because the associated client
+was disconnected. You&#39;d typically use this to cleanup resources</p>
+
+<p>This overwrites any precedently set implementation for this proxy.</p>
+
+<p>Returns appropriately and does nothing if this proxy is dead or already managed by
+something else than this library.</p>
+</div><h4 id='method.stop_loop' class="method"><span id='stop_loop.v' class='invisible'><code>fn <a href='#method.stop_loop' class='fnname'>stop_loop</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#134-136' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Stop looping</p>
+
+<p>If the event loop this handle belongs to is currently running its <code>run()</code>
+method, it&#39;ll stop and return as soon as the current dispatching session ends.</p>
+</div><h4 id='method.state' class="method"><span id='state.v' class='invisible'><code>fn <a href='#method.state' class='fnname'>state</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../wayland_server/struct.State.html" title="struct wayland_server::State">State</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#143-145' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Get an handle to the internal state</p>
+
+<p>The returned guard object allows you to get references
+to the handler objects you previously inserted in this
+event loop.</p>
+</div><h4 id='method.add_fd_event_source' class="method"><span id='add_fd_event_source.v' class='invisible'><code>fn <a href='#method.add_fd_event_source' class='fnname'>add_fd_event_source</a>&lt;ID:&nbsp;'static&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;fd: <a class="type" href="https://doc.rust-lang.org/nightly/std/sys/imp/ext/io/type.RawFd.html" title="type std::sys::imp::ext::io::RawFd">RawFd</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;implementation: <a class="struct" href="../wayland_server/sources/struct.FdEventSourceImpl.html" title="struct wayland_server::sources::FdEventSourceImpl">FdEventSourceImpl</a>&lt;ID&gt;, <br>&nbsp;&nbsp;&nbsp;&nbsp;idata: ID, <br>&nbsp;&nbsp;&nbsp;&nbsp;interest: <a class="struct" href="../wayland_server/sources/struct.FdInterest.html" title="struct wayland_server::sources::FdInterest">FdInterest</a><br>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/std/io/error/type.Result.html" title="type std::io::error::Result">IoResult</a>&lt;<a class="struct" href="../wayland_server/sources/struct.FdEventSource.html" title="struct wayland_server::sources::FdEventSource">FdEventSource</a>&lt;ID&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#153-179' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Add a File Descriptor event source to this event loop</p>
+
+<p>The interest in read/write capability for this FD must be provided
+(and can be changed afterwards using the returned object), and the
+associated handler will be called whenever these capabilities are
+satisfied, during the dispatching of this event loop.</p>
+</div><h4 id='method.add_timer_event_source' class="method"><span id='add_timer_event_source.v' class='invisible'><code>fn <a href='#method.add_timer_event_source' class='fnname'>add_timer_event_source</a>&lt;ID&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;implementation: <a class="type" href="../wayland_server/sources/type.TimerEventSourceImpl.html" title="type wayland_server::sources::TimerEventSourceImpl">TimerEventSourceImpl</a>&lt;ID&gt;, <br>&nbsp;&nbsp;&nbsp;&nbsp;idata: ID<br>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/std/io/error/type.Result.html" title="type std::io::error::Result">IoResult</a>&lt;<a class="struct" href="../wayland_server/sources/struct.TimerEventSource.html" title="struct wayland_server::sources::TimerEventSource">TimerEventSource</a>&lt;ID&gt;&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;ID: 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#187-213' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Add a timer event source to this event loop</p>
+
+<p>It is a countdown, which can be reset using the struct
+returned by this function. When the countdown reaches 0,
+the registered handler is called in the dispatching of
+this event loop.</p>
+</div><h4 id='method.add_signal_event_source' class="method"><span id='add_signal_event_source.v' class='invisible'><code>fn <a href='#method.add_signal_event_source' class='fnname'>add_signal_event_source</a>&lt;ID&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;implementation: <a class="type" href="../wayland_server/sources/type.SignalEventSourceImpl.html" title="type wayland_server::sources::SignalEventSourceImpl">SignalEventSourceImpl</a>&lt;ID&gt;, <br>&nbsp;&nbsp;&nbsp;&nbsp;idata: ID, <br>&nbsp;&nbsp;&nbsp;&nbsp;signal: Signal<br>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/std/io/error/type.Result.html" title="type std::io::error::Result">IoResult</a>&lt;<a class="struct" href="../wayland_server/sources/struct.SignalEventSource.html" title="struct wayland_server::sources::SignalEventSource">SignalEventSource</a>&lt;ID&gt;&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;ID: 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#221-249' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Add a signal event source to this event loop</p>
+
+<p>This will listen for a given unix signal (by setting up
+a signalfd for it) and call the registered handler whenever
+the program receives this signal. Calls are made during the
+dispatching of this event loop.</p>
+</div><h4 id='method.add_idle_event_source' class="method"><span id='add_idle_event_source.v' class='invisible'><code>fn <a href='#method.add_idle_event_source' class='fnname'>add_idle_event_source</a>&lt;ID&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;implementation: <a class="type" href="../wayland_server/sources/type.IdleEventSourceImpl.html" title="type wayland_server::sources::IdleEventSourceImpl">IdleEventSourceImpl</a>&lt;ID&gt;, <br>&nbsp;&nbsp;&nbsp;&nbsp;idata: ID<br>) -&gt; <a class="struct" href="../wayland_server/sources/struct.IdleEventSource.html" title="struct wayland_server::sources::IdleEventSource">IdleEventSource</a>&lt;ID&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;ID: 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#260-283' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Add an idle event source to this event loop</p>
+
+<p>This is a kind of &quot;defer this computation for when there is nothing else to do&quot;.</p>
+
+<p>The provided implementation callback will be called when the event loop has finished
+processing all the pending I/O. This callback will be fired exactly once the first
+time this condition is met.</p>
+
+<p>You can cancel it using the returned <code>IdleEventSource</code>.</p>
+</div><h4 id='method.register_global' class="method"><span id='register_global.v' class='invisible'><code>fn <a href='#method.register_global' class='fnname'>register_global</a>&lt;R:&nbsp;<a class="trait" href="../wayland_server/trait.Resource.html" title="trait wayland_server::Resource">Resource</a>, ID&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;version: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.i32.html">i32</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;callback: <a class="type" href="../wayland_server/type.GlobalCallback.html" title="type wayland_server::GlobalCallback">GlobalCallback</a>&lt;R, ID&gt;, <br>&nbsp;&nbsp;&nbsp;&nbsp;idata: ID<br>) -&gt; <a class="struct" href="../wayland_server/struct.Global.html" title="struct wayland_server::Global">Global</a>&lt;R, ID&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/wayland_server/event_loop.rs.html#295-323' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Register a global object to the display.</p>
+
+<p>Specify the version of the interface to advertize, as well as the callback that will
+receive requests to create an object.</p>
+
+<p>This uses an &quot;implementation data&quot; mechanism similar to regular wayland objects.</p>
+
+<p>Panics:</p>
+
+<ul>
+<li>if the event loop is not associated to a display</li>
+</ul>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "wayland_server";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
