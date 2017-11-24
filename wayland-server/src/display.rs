@@ -157,6 +157,10 @@ impl Display {
     pub fn flush_clients(&self) {
         unsafe { ffi_dispatch!(WAYLAND_SERVER_HANDLE, wl_display_flush_clients, self.ptr) };
     }
+
+    pub fn get_raw_display(&mut self) -> *mut wl_display {
+        self.ptr
+    }
 }
 
 impl Drop for Display {
